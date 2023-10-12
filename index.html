@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>主页</title>
+<link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+<style type="text/css">
+	.swiper {
+    width: 100%;
+    height: 400px;
+}  
+	.m{
+	width: 100%;
+	background-image:url(img/bg.jpeg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	position：fixed;
+	}
+	.header{
+	text-align:center;
+	font-family:"幼圆";
+	font-size:36px;
+	}
+	.nav{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #F0F8FF;
+	}
+	.main{
+	font-family:"幼圆";
+	font-size:24px;
+	position:relative;
+	}
+	.footer{
+	height:100px;
+	font-family:"幼圆";
+	font-size:24px;
+	}
+	#aa{
+	width: 1050px;
+	height: 55px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #87CEEB;
+	margin: 0 auto;	
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	}
+	a{
+	  		text-decoration: none;
+	   	 	width: 100px;
+	   	 	height: 50px;
+	   	 	 text-align: center;
+	   	 	background-color: pink;
+	   	 	line-height: 50px;
+	   	 	color:white;
+	   	 	display: inline-block;
+	  }
+	a:hover{
+	   	 	background-color: indianred;
+	   	 	color:#F0F8FF
+	   	 }
+
+</style>
+</head>
+<body>
+<div class="m">
+	<div class="header">
+    欢迎来到比奇堡！
+    </div>
+    <div class="nav">
+    <div id="aa">
+				<a href="index.html">首页</a>
+				<a href="rw.html">人物介绍</a>
+				<a href="jz.html">建筑介绍</a>
+			</div>
+    </div>
+    <div class="main">
+		<div class="swiper">
+    		<div class="swiper-wrapper">
+        		<div class="swiper-slide" data-hash="slide1"><img src="img/b1.jpeg" width="516" height="400"></div>
+        		<div class="swiper-slide" data-hash="slide2"><img src="img/b2.jpg" width="516" height="400"></div>
+        		<div class="swiper-slide" data-hash="slide3"><img src="img/b3.jpg" width="516" height="400"></div>
+    		</div>
+            <div class="swiper-pagination"></div>
+		</div>
+        介绍：
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;《海绵宝宝》（SpongeBob SquarePants）是一部由史蒂芬·海伦伯格原创，舍曼·科恩、沃特·杜赫、山姆·亨德森、保罗·蒂比特、沃尔特·道恩等导演，汤姆·肯尼、比尔·法格巴克、罗杰·布帕斯等配音的美国喜剧动画，于1999年7月17日在尼克国际儿童频道开播。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;央视少儿频道从2006年1月29日大年初一晚20:00开始播出。</p> 
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;《海绵宝宝》的故事情节主要围绕着主角海绵宝宝和他的好朋友派大星、邻居章鱼哥、上司蟹老板等生物展开，场景设定于太平洋海底，一座被称为比基尼海滩的城市。2005年1月30日，该片荣获第32届安妮奖授予的“最佳TV动画制作”奖。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;这部动画除了固定描绘的卡通场景与人物之外，也会穿插一些真实的物件或人物：例如曾出演《海滩游侠》与《霹雳游侠》的大卫·哈塞尔霍夫，以本人的身份出演了几集。但海绵宝宝卡通的内容基本上与海洋知识无关，甚至夸大到完全不合乎科学与常识，例如海底生火、海底冲澡等，剧集内容也会时不时的嘲笑精致艺术和章鱼哥的劳工权益想法。</p>
+    剧情简介：
+    <p>海绵宝宝是方块形的黄色海绵，住在比基尼海滩（裤头村、比奇堡）的一个菠萝里，他的宠物是一只会“猫~猫~”叫的海蜗牛小蜗，海绵宝宝喜欢捕捉水母，职业是蟹堡王（The Krusty Krab）里的头号厨师。派大星和珊迪都是他的朋友。海绵宝宝总是能给平静的世界制造麻烦，虽然闹出一些笑话，不过他总能摆脱困境，然后又制造出新的麻烦。</p>
+	</div>
+    <div class="footer">
+    <marquee direction="right" scrolldelay="60" scrollamount="9" behavior="alternate">
+    <img src="img/mo.jpg" width="100px" height="100px">
+    下次再见！
+    </marquee>
+    </div>
+</div>
+    
+    
+<script src="swiper/swiper-bundle.min.js"></script>
+<script>        
+  var mySwiper = new Swiper ('.swiper', {
+	effect: 'coverflow',
+    slidesPerView: 3,
+    centeredSlides: true,
+	hashNavigation: true,
+	pagination: {
+        el: ".swiper-pagination",
+      },
+  })        
+  </script>
+</body>
+</html>
